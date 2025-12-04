@@ -67,48 +67,42 @@
 			<optional>true</optional>
 		</dependency>
 
-		<!-- Jackson за ObjectMapper (databind) -->
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-databind</artifactId>
 		</dependency>
 
-		<!-- ===== Test dependencies ===== -->
-
-		<!-- Основен Spring Boot тестов стартер: JUnit5, Spring Test, Mockito, AssertJ и т.н. -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
 
-		<!-- Автоконфигурации за @WebMvcTest, @DataJpaTest и т.н. (WebMvcTest, DataJpaTest са точно тук) -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-test-autoconfigure</artifactId>
+			<version>4.0.0</version>
 			<scope>test</scope>
 		</dependency>
 
-		<!-- Mockito (въпреки че идва транзитивно, слагаме го експлицитно да няма драми) -->
 		<dependency>
 			<groupId>org.mockito</groupId>
 			<artifactId>mockito-core</artifactId>
 			<scope>test</scope>
 		</dependency>
 
-		<!-- In-memory H2 база за @DataJpaTest -->
 		<dependency>
 			<groupId>com.h2database</groupId>
 			<artifactId>h2</artifactId>
 			<scope>test</scope>
 		</dependency>
 
-		<!-- Spring Security тестове (ако потрябват) -->
 		<dependency>
 			<groupId>org.springframework.security</groupId>
 			<artifactId>spring-security-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
 	</dependencies>
 
 
